@@ -113,7 +113,7 @@
           "type": "basic.constant",
           "data": {
             "name": "Address0x3C",
-            "value": "7'b00111100",
+            "value": "7'b0111100",
             "local": false
           },
           "position": {
@@ -358,10 +358,10 @@
     },
     "state": {
       "pan": {
-        "x": 185.1389,
-        "y": 118.6302
+        "x": 399.322,
+        "y": 116.6452
       },
-      "zoom": 0.7257
+      "zoom": 1.5259
     }
   },
   "dependencies": {
