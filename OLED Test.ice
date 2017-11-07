@@ -58,8 +58,8 @@
             "pins": [
               {
                 "index": "0",
-                "name": "ADC_SDA",
-                "value": "90"
+                "name": "ADC_INT",
+                "value": "93"
               }
             ],
             "virtual": false,
@@ -67,7 +67,7 @@
           },
           "position": {
             "x": -200,
-            "y": 176
+            "y": 184
           }
         },
         {
@@ -105,7 +105,7 @@
           },
           "position": {
             "x": 688,
-            "y": 384
+            "y": 360
           }
         },
         {
@@ -188,15 +188,15 @@
           }
         },
         {
-          "id": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
-          "type": "a6faaeb7f85b71780c8a743c9f7e0527ee1f9ab6",
+          "id": "a2134284-1c58-4683-8313-49821a455d3d",
+          "type": "c1f93518421ef2eef685d82d455a8458c886509c",
           "position": {
             "x": 416,
-            "y": 152
+            "y": 216
           },
           "size": {
             "width": 96,
-            "height": 288
+            "height": 256
           }
         }
       ],
@@ -243,60 +243,11 @@
         },
         {
           "source": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
-            "port": "117d621b-1d0d-4acc-81c0-1a646fd2824f"
-          },
-          "target": {
-            "block": "628f9e88-45a4-464d-bb62-2dbbfa2d59ad",
-            "port": "in"
-          }
-        },
-        {
-          "source": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
-            "port": "20db224a-3f7c-4fbf-80a0-7c82d5557890"
-          },
-          "target": {
-            "block": "3e28f45b-4989-4999-84d3-8043e1244391",
-            "port": "dc314b22-353f-4a77-a835-7fa80424a2fd"
-          },
-          "size": 8
-        },
-        {
-          "source": {
-            "block": "ba2c6b84-3326-4c17-a8a8-e290b7c8a152",
-            "port": "k"
-          },
-          "target": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
-            "port": "0dd5b073-41e4-4926-96de-eeb9e656bee4"
-          },
-          "size": 7
-        },
-        {
-          "source": {
-            "block": "c79c8cf7-65a9-46b4-80ba-6c31cb4213b9",
-            "port": "a40f5065-af61-4b43-8f29-35e9a13f7651"
-          },
-          "target": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
-            "port": "c1e53ae5-7c0a-4cd8-ad0e-40b2a7726779"
-          },
-          "vertices": [
-            {
-              "x": 296,
-              "y": 128
-            }
-          ],
-          "size": 8
-        },
-        {
-          "source": {
             "block": "0855fa83-da16-4d9d-a3de-6a9b0ccb8aec",
             "port": "19c8f68d-5022-487f-9ab0-f0a3cd58bead"
           },
           "target": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
             "port": "f3893774-6b42-484e-85b8-b952903e93e0"
           }
         },
@@ -306,15 +257,35 @@
             "port": "19c8f68d-5022-487f-9ab0-f0a3cd58bead"
           },
           "target": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
             "port": "337a8679-e65f-4bc8-a33d-dfe6ea78143f"
           },
           "vertices": [
             {
-              "x": 312,
-              "y": 344
+              "x": 296,
+              "y": 360
             }
           ]
+        },
+        {
+          "source": {
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
+            "port": "117d621b-1d0d-4acc-81c0-1a646fd2824f"
+          },
+          "target": {
+            "block": "628f9e88-45a4-464d-bb62-2dbbfa2d59ad",
+            "port": "in"
+          }
+        },
+        {
+          "source": {
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
+            "port": "56105f11-fbf9-42fc-aeec-787d75d37c49"
+          },
+          "target": {
+            "block": "61f5f19e-bc4f-4de9-b9c2-d903f8a19fec",
+            "port": "in"
+          }
         },
         {
           "source": {
@@ -322,34 +293,75 @@
             "port": "out"
           },
           "target": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
             "port": "6410133b-95d8-440f-ac12-e3c06dc60ba9"
           },
           "vertices": [
             {
-              "x": 216,
-              "y": 232
+              "x": 248,
+              "y": 240
             }
           ]
         },
         {
           "source": {
-            "block": "3ded4aaa-00f3-4fa3-809b-20a295bd56ff",
-            "port": "56105f11-fbf9-42fc-aeec-787d75d37c49"
+            "block": "ba2c6b84-3326-4c17-a8a8-e290b7c8a152",
+            "port": "k"
           },
           "target": {
-            "block": "61f5f19e-bc4f-4de9-b9c2-d903f8a19fec",
-            "port": "in"
-          }
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
+            "port": "0dd5b073-41e4-4926-96de-eeb9e656bee4"
+          },
+          "vertices": [
+            {
+              "x": 344,
+              "y": 360
+            }
+          ],
+          "size": 7
+        },
+        {
+          "source": {
+            "block": "c79c8cf7-65a9-46b4-80ba-6c31cb4213b9",
+            "port": "a40f5065-af61-4b43-8f29-35e9a13f7651"
+          },
+          "target": {
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
+            "port": "c1e53ae5-7c0a-4cd8-ad0e-40b2a7726779"
+          },
+          "vertices": [
+            {
+              "x": 320,
+              "y": 184
+            }
+          ],
+          "size": 8
+        },
+        {
+          "source": {
+            "block": "a2134284-1c58-4683-8313-49821a455d3d",
+            "port": "20db224a-3f7c-4fbf-80a0-7c82d5557890"
+          },
+          "target": {
+            "block": "3e28f45b-4989-4999-84d3-8043e1244391",
+            "port": "dc314b22-353f-4a77-a835-7fa80424a2fd"
+          },
+          "vertices": [
+            {
+              "x": 616,
+              "y": 168
+            }
+          ],
+          "size": 8
         }
       ]
     },
     "state": {
       "pan": {
-        "x": 560.654,
-        "y": 292.5108
+        "x": 185.1389,
+        "y": 118.6302
       },
-      "zoom": 1.0106
+      "zoom": 0.7257
     }
   },
   "dependencies": {
@@ -4446,7 +4458,7 @@
         }
       }
     },
-    "a6faaeb7f85b71780c8a743c9f7e0527ee1f9ab6": {
+    "c1f93518421ef2eef685d82d455a8458c886509c": {
       "package": {
         "name": "I2C",
         "version": "0.2",
@@ -4466,7 +4478,7 @@
               },
               "position": {
                 "x": -48,
-                "y": -72
+                "y": -64
               }
             },
             {
@@ -4489,7 +4501,7 @@
               },
               "position": {
                 "x": -48,
-                "y": 8
+                "y": 24
               }
             },
             {
@@ -4512,7 +4524,7 @@
               },
               "position": {
                 "x": -48,
-                "y": 80
+                "y": 112
               }
             },
             {
@@ -4526,18 +4538,6 @@
               "position": {
                 "x": 936,
                 "y": 112
-              }
-            },
-            {
-              "id": "c74a23da-0c1f-4f6c-9f77-32e8eb20238c",
-              "type": "basic.input",
-              "data": {
-                "name": "scl_in",
-                "clock": false
-              },
-              "position": {
-                "x": -48,
-                "y": 160
               }
             },
             {
@@ -4560,14 +4560,14 @@
               },
               "position": {
                 "x": -48,
-                "y": 240
+                "y": 200
               }
             },
             {
               "id": "56105f11-fbf9-42fc-aeec-787d75d37c49",
               "type": "basic.output",
               "data": {
-                "name": "scl_out"
+                "name": "scl"
               },
               "position": {
                 "x": 936,
@@ -4585,7 +4585,7 @@
               },
               "position": {
                 "x": -48,
-                "y": 320
+                "y": 288
               }
             },
             {
@@ -4608,7 +4608,7 @@
               },
               "position": {
                 "x": -48,
-                "y": 400
+                "y": 376
               }
             },
             {
@@ -4633,7 +4633,7 @@
               },
               "position": {
                 "x": -48,
-                "y": 472
+                "y": 464
               }
             },
             {
@@ -4663,7 +4663,7 @@
               "id": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
               "type": "basic.code",
               "data": {
-                "code": "//@include i2c.v\n\n//Instantiate I2C module.\n//Instanciar el módulo I2C.\ni2c\ni2c1 (\n    clk,            // System clock.\n    rst,            // Reset.\n    enable,         // Enable.\n    fast_mode,      // Fast mode.\n    addr[6:0],      // Address device.\n    rw,             // Read-write signal.\n    data_wr[7:0],   // Data write.\n    data_rd[7:0],   // Data read.\n    ready,          // Ready for a set of bytes.\n    busy,           // Busy.\n    ack_error,      // Ack error.\n    sdain,          // SDA pin. (input)\n    sclin,          // SCL pin. (input)\n    sdaout,         // SDA pin. (output)\n    sclout,         // SCL pin. (output)\n    sda2,           // SDA pin (debug)\n    scl2            // SCL pin (debug)\n);",
+                "code": "//@include i2c.v\n\n//Instantiate I2C module.\n//Instanciar el módulo I2C.\ni2c\ni2c1 (\n    clk,            // System clock.\n    rst,            // Reset.\n    enable,         // Enable.\n    fast_mode,      // Fast mode.\n    addr[6:0],      // Address device.\n    rw,             // Read-write signal.\n    data_wr[7:0],   // Data write.\n    data_rd[7:0],   // Data read.\n    ready,          // Ready for a set of bytes.\n    busy,           // Busy.\n    ack_error,      // Ack error.\n    sdain,          // SDA pin. (input)\n    scl,          // SCL pin. (input)\n    sdaout,         // SDA pin. (output)\n    sda2,           // SDA pin (debug)\n    scl2            // SCL pin (debug)\n);",
                 "params": [],
                 "ports": {
                   "in": [
@@ -4675,9 +4675,6 @@
                     },
                     {
                       "name": "sdain"
-                    },
-                    {
-                      "name": "sclin"
                     },
                     {
                       "name": "enable"
@@ -4715,7 +4712,7 @@
                       "name": "ready"
                     },
                     {
-                      "name": "sclout"
+                      "name": "scl"
                     },
                     {
                       "name": "sdaout"
@@ -4875,16 +4872,6 @@
             },
             {
               "source": {
-                "block": "c74a23da-0c1f-4f6c-9f77-32e8eb20238c",
-                "port": "out"
-              },
-              "target": {
-                "block": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
-                "port": "sclin"
-              }
-            },
-            {
-              "source": {
                 "block": "6410133b-95d8-440f-ac12-e3c06dc60ba9",
                 "port": "out"
               },
@@ -4896,20 +4883,20 @@
             {
               "source": {
                 "block": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
-                "port": "sclout"
+                "port": "sdaout"
               },
               "target": {
-                "block": "56105f11-fbf9-42fc-aeec-787d75d37c49",
+                "block": "117d621b-1d0d-4acc-81c0-1a646fd2824f",
                 "port": "in"
               }
             },
             {
               "source": {
                 "block": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
-                "port": "sdaout"
+                "port": "scl"
               },
               "target": {
-                "block": "117d621b-1d0d-4acc-81c0-1a646fd2824f",
+                "block": "56105f11-fbf9-42fc-aeec-787d75d37c49",
                 "port": "in"
               }
             }
@@ -4917,10 +4904,10 @@
         },
         "state": {
           "pan": {
-            "x": 77.1556,
-            "y": 103.663
+            "x": 118.3523,
+            "y": 95.2273
           },
-          "zoom": 0.7741
+          "zoom": 0.6903
         }
       }
     }

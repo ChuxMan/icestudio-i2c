@@ -28,7 +28,7 @@
           },
           "position": {
             "x": -48,
-            "y": -72
+            "y": -64
           }
         },
         {
@@ -67,7 +67,7 @@
           },
           "position": {
             "x": -48,
-            "y": 8
+            "y": 24
           }
         },
         {
@@ -106,7 +106,7 @@
           },
           "position": {
             "x": -48,
-            "y": 80
+            "y": 112
           }
         },
         {
@@ -165,26 +165,6 @@
           }
         },
         {
-          "id": "c74a23da-0c1f-4f6c-9f77-32e8eb20238c",
-          "type": "basic.input",
-          "data": {
-            "name": "scl_in",
-            "pins": [
-              {
-                "index": "0",
-                "name": "",
-                "value": "0"
-              }
-            ],
-            "virtual": true,
-            "clock": false
-          },
-          "position": {
-            "x": -48,
-            "y": 160
-          }
-        },
-        {
           "id": "5d8a3d4d-9ff9-4cd8-9831-a5609f5e8a48",
           "type": "basic.output",
           "data": {
@@ -220,14 +200,14 @@
           },
           "position": {
             "x": -48,
-            "y": 240
+            "y": 200
           }
         },
         {
           "id": "56105f11-fbf9-42fc-aeec-787d75d37c49",
           "type": "basic.output",
           "data": {
-            "name": "scl_out",
+            "name": "scl",
             "pins": [
               {
                 "index": "0",
@@ -290,7 +270,7 @@
           },
           "position": {
             "x": -48,
-            "y": 320
+            "y": 288
           }
         },
         {
@@ -329,7 +309,7 @@
           },
           "position": {
             "x": -48,
-            "y": 400
+            "y": 376
           }
         },
         {
@@ -404,7 +384,7 @@
           },
           "position": {
             "x": -48,
-            "y": 472
+            "y": 464
           }
         },
         {
@@ -450,7 +430,7 @@
           "id": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
           "type": "basic.code",
           "data": {
-            "code": "//@include i2c.v\n\n//Instantiate I2C module.\n//Instanciar el módulo I2C.\ni2c\ni2c1 (\n    clk,            // System clock.\n    rst,            // Reset.\n    enable,         // Enable.\n    fast_mode,      // Fast mode.\n    addr[6:0],      // Address device.\n    rw,             // Read-write signal.\n    data_wr[7:0],   // Data write.\n    data_rd[7:0],   // Data read.\n    ready,          // Ready for a set of bytes.\n    busy,           // Busy.\n    ack_error,      // Ack error.\n    sdain,          // SDA pin. (input)\n    sclin,          // SCL pin. (input)\n    sdaout,         // SDA pin. (output)\n    sclout,         // SCL pin. (output)\n    sda2,           // SDA pin (debug)\n    scl2            // SCL pin (debug)\n);",
+            "code": "//@include i2c.v\n\n//Instantiate I2C module.\n//Instanciar el módulo I2C.\ni2c\ni2c1 (\n    clk,            // System clock.\n    rst,            // Reset.\n    enable,         // Enable.\n    fast_mode,      // Fast mode.\n    addr[6:0],      // Address device.\n    rw,             // Read-write signal.\n    data_wr[7:0],   // Data write.\n    data_rd[7:0],   // Data read.\n    ready,          // Ready for a set of bytes.\n    busy,           // Busy.\n    ack_error,      // Ack error.\n    sdain,          // SDA pin. (input)\n    scl,          // SCL pin. (input)\n    sdaout,         // SDA pin. (output)\n    sda2,           // SDA pin (debug)\n    scl2            // SCL pin (debug)\n);",
             "params": [],
             "ports": {
               "in": [
@@ -462,9 +442,6 @@
                 },
                 {
                   "name": "sdain"
-                },
-                {
-                  "name": "sclin"
                 },
                 {
                   "name": "enable"
@@ -502,7 +479,7 @@
                   "name": "ready"
                 },
                 {
-                  "name": "sclout"
+                  "name": "scl"
                 },
                 {
                   "name": "sdaout"
@@ -662,16 +639,6 @@
         },
         {
           "source": {
-            "block": "c74a23da-0c1f-4f6c-9f77-32e8eb20238c",
-            "port": "out"
-          },
-          "target": {
-            "block": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
-            "port": "sclin"
-          }
-        },
-        {
-          "source": {
             "block": "6410133b-95d8-440f-ac12-e3c06dc60ba9",
             "port": "out"
           },
@@ -683,20 +650,20 @@
         {
           "source": {
             "block": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
-            "port": "sclout"
+            "port": "sdaout"
           },
           "target": {
-            "block": "56105f11-fbf9-42fc-aeec-787d75d37c49",
+            "block": "117d621b-1d0d-4acc-81c0-1a646fd2824f",
             "port": "in"
           }
         },
         {
           "source": {
             "block": "5ce4ea27-c70f-4911-bb77-e3646bbe6352",
-            "port": "sdaout"
+            "port": "scl"
           },
           "target": {
-            "block": "117d621b-1d0d-4acc-81c0-1a646fd2824f",
+            "block": "56105f11-fbf9-42fc-aeec-787d75d37c49",
             "port": "in"
           }
         }
@@ -704,10 +671,10 @@
     },
     "state": {
       "pan": {
-        "x": 77.1556,
-        "y": 103.663
+        "x": 118.3523,
+        "y": 95.2273
       },
-      "zoom": 0.7741
+      "zoom": 0.6903
     }
   },
   "dependencies": {}

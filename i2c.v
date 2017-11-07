@@ -12,9 +12,9 @@ module i2c
     output reg        busy,           // Busy.
     output reg        ack_error,      // Ack error.
     input  wire       sdain,          // SDA pin. (sin guión bajo para diferenciar del wire interno)
-    input  wire       sclin,          // SCL pin.
+    output wire       scl,            // SCL pin.
     output wire       sdaout,         // SDA pin. (sin guión bajo para diferenciar del wire interno)
-    output wire       sclout,         // SCL pin.
+    //output wire       sclout,         // SCL pin.
     output wire       sda2,           // SDA pin (debug).
     output wire       scl2            // SCL pin (debug).
 );
@@ -317,7 +317,7 @@ assign sda_enable = (state == START) ? data_clk_prev :
 assign ready = (state == IDLE);
 
 //Tri-State buffer control  -- Originales de Obijuan.
-/*SB_IO # (
+SB_IO # (
     .PIN_TYPE(6'b1010_01),
     .PULLUP(1'b0)
 ) scl_io (
@@ -325,7 +325,7 @@ assign ready = (state == IDLE);
     .OUTPUT_ENABLE(scl_enable == 1'b1 && scl_clk == 1'b0),
     .D_OUT_0(1'b0),
     .D_IN_0(scl_in)
-); */
+);
 
 //Tri-State buffer control 
 /*SB_IO # (
@@ -339,7 +339,7 @@ assign ready = (state == IDLE);
 );*/
 
 //Tri-State buffer control. Modificado por ChuxMan. 2017-11-07.
-SB_IO # (
+/*SB_IO # (
     .PIN_TYPE(6'b1010_01),
     .PULLUP(1'b0)
 ) scl_io (
@@ -347,7 +347,7 @@ SB_IO # (
     .OUTPUT_ENABLE(scl_enable == 1'b1 && scl_clk == 1'b0),
     .D_OUT_0(sclout),
     .D_IN_0(scl_in)
-);
+);*/
 
 //Tri-State buffer control.
 SB_IO # (
